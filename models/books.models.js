@@ -1,9 +1,5 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/book_fav', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
 const BooksSchema = new mongoose.Schema({
   title: String,
   status: String,
